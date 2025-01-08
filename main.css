@@ -1,5 +1,38 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
-	background-color: orange;
 	width: 100vw;
 	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: gray;
+}
+
+main {
+	height: 80vh;
+	width: 40vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: white;
+}
+
+.message {
+	font-size: 1rem;
+	width: 90%;
+	padding: 0.5rem;
+	text-align: justify;
+}
+
+.own {
+	background-color: rgb(104, 184, 104);
+}
+
+.other {
+	background-color: rgb(197, 197, 197);
 }
