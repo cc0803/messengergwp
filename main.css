@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 }
 
-body {
+html {
 	width: 100vw;
 	height: 100vh;
 	display: flex;
@@ -12,14 +12,56 @@ body {
 	background-color: gray;
 }
 
-main {
+body {
 	height: 80vh;
 	width: 40vh;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	flex-direction: column;
+	background-color: white;
+	border: 0.3rem solid rgb(48 48, 48);
+}
+
+main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background-color: white;
+}
+
+footer {
+	border-top: 0.2rem solid rgb(48, 48, 48);
+	height: 10%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+form {
+	padding: 0.2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 80%;
+	width: 90%;
+}
+
+.keyboard-container {
+	width: 80%;
+}
+
+.text-field {
+	margin: 0.2rem;
+	height: 90%;
+	width: 90%;
+}
+
+.send-button {
+	margin: 0.2rem;
+	height: 90%;
+	width: 90%;
 }
 
 .message {
@@ -27,6 +69,7 @@ main {
 	width: 90%;
 	padding: 0.5rem;
 	text-align: justify;
+	margin: 0.25rem;
 }
 
 .own {
