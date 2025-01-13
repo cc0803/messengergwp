@@ -1,5 +1,9 @@
-* {
+*,
+*::before,
+*::after {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 html {
@@ -72,10 +76,10 @@ form {
 	margin: 0.25rem;
 }
 
-.own {
+.message--own {
 	background-color: rgb(104, 184, 104);
 }
 
-.other {
+.message--other {
 	background-color: rgb(197, 197, 197);
 }
