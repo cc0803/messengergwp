@@ -1,3 +1,13 @@
+/*
+resets all inherent margins/padding so there are no 
+unexpected margins/padding
+
+border-box means the width is the total width 
+including padding but excluding margin
+
+E.g.: width: 20px; padding: 5px;
+means total width of 20px not 30px
+*/
 *,
 *::before,
 *::after {
@@ -9,10 +19,6 @@
 html {
 	width: 100vw;
 	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
 	background-color: gray;
 }
 
@@ -22,25 +28,14 @@ body {
 	display: flex;
 	justify-content: end;
 	align-items: center;
-	flex-direction: column;
 	background-color: white;
 	border: 0.3rem solid rgb(48 48, 48);
-}
-
-main {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
 }
 
 footer {
 	border-top: 0.2rem solid rgb(48, 48, 48);
 	height: 10%;
 	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 form {
